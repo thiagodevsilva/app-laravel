@@ -64,37 +64,37 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        <h1>Título</h1>
+        <h3>Variaveis Blade</h3>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+        
+        <p>{{$nome}}</p>        
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+        @if ($nome == 'Thiago')
+            <p>O nome é Thiago</p>
+        @else
+            <p>O nome não é Thiago</p>
+        @endif
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
+        <h3>Estrutura repetição Blade</h3>
+        <h4>For</h4>
+        @for ($i = 0 ; $i < count($arr); $i++)
+            <p>[{{$i}}] {{ $arr[$i] }}</p>
+        @endfor
+        
+        <h4>Foreach</h4>
+        @foreach($nomes as $nome)
+            <p>[{{$loop->index}}] {{$nome}}</p>
+        @endforeach
+
+        <h3>Declaração direto na View Blade</h3>
+        @php
+            $teste = 'Uau, deu certo!';
+            echo $teste;
+        @endphp
+
+        <h3>Comentario Blade</h3>
+        <p>Não aparece nem no inspecionar.</p>
+        {{-- Comentario --}}
     </body>
 </html>
