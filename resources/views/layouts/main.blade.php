@@ -26,7 +26,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="" class="navbar-bra">
-                        <img src="/img/logo.png" alt="THIAGO SITES" style="width: 60px; margin-left: 10px;">
+                        <img src="/img/logo.png" alt="THIAGO SITES" style="width: 120px; margin-left: 10px;">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
