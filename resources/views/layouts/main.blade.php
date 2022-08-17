@@ -1,3 +1,9 @@
+<?php
+
+date_default_timezone_set("America/Sao_Paulo");
+
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -28,7 +34,7 @@
                     <a href="" class="navbar-bra">
                         <img src="/img/logo.png" alt="THIAGO SITES" style="width: 120px; margin-left: 10px;">
                     </a>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" style="margin-right: 50px;">
                         <li class="nav-item">
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
