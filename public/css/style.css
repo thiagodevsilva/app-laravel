@@ -122,6 +122,7 @@ header {
 #events-container .card {
     flex: 1 1 0;
     max-width: 25%;
+    min-width: 20%;
 }
 
 /* footer */
