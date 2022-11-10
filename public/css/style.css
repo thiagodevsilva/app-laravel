@@ -120,9 +120,12 @@ header {
 }
 
 #events-container .card {
-    flex: 1 1 0;
-    max-width: 25%;
-    min-width: 20%;
+    flex: 1 1 18%;
+    max-width: 19%;
+    min-width: 19%;
+    border-radius: 4px;
+    padding: 0;
+    margin: .5%;
 }
 
 /* footer */
