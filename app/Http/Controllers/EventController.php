@@ -73,4 +73,10 @@ class EventController extends Controller
         $nomes = ['Thiago', 'Thais', 'Elisama', 'Quesia'];
         return view('welcome', ['nome' => $nome, 'arr' => $arr, 'nomes' => $nomes]);
     }
+
+    public function show($id) {
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+    }
 }

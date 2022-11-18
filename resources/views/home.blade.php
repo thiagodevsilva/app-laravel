@@ -18,9 +18,9 @@
         <div class="card col-md-3">
 
             @if ($event->image)
-            <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
+            <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
             @else
-            <img src="/img/placeholder-img.jpg" alt="{{ $event->title }}">
+            <img src="/img/placeholder-img.jpg" alt="{{$event->title}}">
             @endif
             
             <div class="card-body">
@@ -33,7 +33,7 @@
                 <p class="card-participants">
                     X Participantes
                 </p>
-                <a href="#" class="btn btn-primary">
+                <a href="/events/{{$event->id}}" class="btn btn-primary">
                     Saber mais
                 </a>
             </div>
